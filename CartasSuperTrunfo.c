@@ -1,4 +1,18 @@
 #include <stdio.h>
+
+// Função para calcular a densidade populacional //
+
+float calcularDensidadePopulacional(int populacao, float area) {
+    return (float) populacao / area;
+}
+
+// Função para calcular o PIB per capita (em mil reais) //
+
+float calcularPIBpercapita(float pib, int populacao) {
+    return ((pib * 1000000000) / populacao) / 1000;
+
+}
+
 int main () {
 
     // Declaração de variaveis das cartas 1 //
@@ -44,6 +58,8 @@ printf("População: %d\n", População1);
 printf("Área: %.2f km²\n", Area1);
 printf("PIB: %.2f bilhões\n", PIB1);
 printf("Pontos turísticos: %d\n", PontosTuristicos1);
+printf("Densidade Populacional: %.2f hab/km²\n", (float)População1 / Area1);
+printf("PIB per capita: %.2f mil\n", (PIB1 * 1000000000) / População1);
 printf("=============================\n");
 
 // Declaração das variaveis da carta 2 //
@@ -89,6 +105,8 @@ printf("População: %d\n", População2);
 printf("Área: %.2f km²\n", Area2);
 printf("PIB: %.2f bilhões\n", PIB2);
 printf("Pontos turísticos: %d\n", PontosTuristicos2);
+printf("Densidade Populacional: %.2f hab/km²\n", (float)População2 / Area2);
+printf("PIB per capita: %.2f mil\n", (PIB2 * 1000000000) / População2);
 printf("=============================\n");
 
 return 0;
